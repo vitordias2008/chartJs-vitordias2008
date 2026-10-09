@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - ChartJS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Cabeçalho -->
+        <div class="cabecalho">
+            <h1>Dashboard de Monitoramento</h1>
+            <p>Acompanhamento de temperatura e umidade</p>
+        </div>
+
+        <!-- Gráficos principais -->
+        <div class="graficos">
+
+            <!-- Gráfico de linhas -->
+            <div class="grafico">
+                <h2>Temperatura e Umidade</h2>
+                <p>Monitoramento por horário</p>
+
+                <canvas id="graficoLinha"></canvas>
+            </div>
+
+            <!-- Gráfico de barras -->
+            <div class="grafico">
+                <h2>Médias Mensais</h2>
+                <p>Temperatura e umidade por mês</p>
+
+                <canvas id="graficoBarra"></canvas>
+            </div>
+
+        </div>
+
+        <!-- Gráfico do desafio -->
+        <div class="grafico graficoDesafio">
+
+            <h2>Distribuição das Temperaturas</h2>
+            <p>Temperatura média por mês - Desafio ChartJS</p>
+
+            <div class="rosca">
+                <canvas id="graficoRosca"></canvas>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

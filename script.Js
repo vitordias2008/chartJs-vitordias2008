@@ -1,23 +1,23 @@
 
-// GRÁFICO DE LINHAS
+// Gráfico de linhas
 
-const labelsLinha = ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'];
+const horarios = ['12:00', '13:00', '14:00', '15:00', '16:00', '17:00'];
 
-const dataLinha = {
-    labels: labelsLinha,
+const dadosLinha = {
+    labels: horarios,
     datasets: [
         {
             label: 'Temperatura (°C)',
             data: [30, 29, 28, 25, 22, 23],
-            backgroundColor: '#f97316',
             borderColor: '#f97316',
+            backgroundColor: '#f97316',
             tension: 0.3
         },
         {
             label: 'Umidade (%)',
             data: [80, 82, 80, 85, 80, 83],
-            backgroundColor: '#3b82f6',
             borderColor: '#3b82f6',
+            backgroundColor: '#3b82f6',
             tension: 0.3
         }
     ]
@@ -25,8 +25,7 @@ const dataLinha = {
 
 const configLinha = {
     type: 'line',
-    data: dataLinha,
-    options: {}
+    data: dadosLinha
 };
 
 new Chart(
@@ -35,32 +34,29 @@ new Chart(
 );
 
 
-// GRÁFICO DE BARRAS
+// Gráfico de barras
 
-const labelsBarra = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'];
+const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'];
 
-const dataBarra = {
-    labels: labelsBarra,
+const dadosBarra = {
+    labels: meses,
     datasets: [
         {
             label: 'Temperatura Média (°C)',
             data: [22, 24, 27, 23, 20, 18],
-            backgroundColor: '#f97316',
-            borderColor: '#f97316'
+            backgroundColor: '#f97316'
         },
         {
             label: 'Umidade Média (%)',
             data: [90, 89, 93, 87, 88, 82],
-            backgroundColor: '#3b82f6',
-            borderColor: '#3b82f6'
+            backgroundColor: '#3b82f6'
         }
     ]
 };
 
 const configBarra = {
     type: 'bar',
-    data: dataBarra,
-    options: {}
+    data: dadosBarra
 };
 
 new Chart(
@@ -69,12 +65,10 @@ new Chart(
 );
 
 
-// GRÁFICO DO DESAFIO - DOUGHNUT
+// Gráfico do desafio - Rosca
 
-const labelsRosca = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho'];
-
-const dataRosca = {
-    labels: labelsRosca,
+const dadosRosca = {
+    labels: meses,
     datasets: [
         {
             label: 'Temperatura Média (°C)',
@@ -86,16 +80,14 @@ const dataRosca = {
                 '#f97316',
                 '#fb923c',
                 '#fdba74'
-            ],
-            hoverOffset: 4
+            ]
         }
     ]
 };
 
 const configRosca = {
     type: 'doughnut',
-    data: dataRosca,
-    options: {}
+    data: dadosRosca
 };
 
 new Chart(

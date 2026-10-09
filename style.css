@@ -3,17 +3,13 @@ body {
     margin: 0;
     padding: 30px;
     font-family: Arial;
-    background-color: #f1f5f9;
-    color: #1e293b;
+    background-color: #f2f4f8;
+    color: #252525;
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1150px;
     margin: auto;
-}
-
-.cabecalho {
-    margin-bottom: 30px;
 }
 
 h1 {
@@ -22,14 +18,14 @@ h1 {
 }
 
 h2 {
-    font-size: 19px;
-    margin-bottom: 8px;
+    font-size: 20px;
+    margin-top: 0;
 }
 
 p {
-    color: #64748b;
+    color: #666;
     font-size: 14px;
-    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .graficos {
@@ -40,13 +36,13 @@ p {
 .grafico {
     background-color: white;
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px #0000000d;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
     flex: 1;
     min-width: 0;
 }
 
-.graficoDesafio {
+.desafio {
     margin-top: 20px;
     text-align: center;
 }
@@ -54,7 +50,7 @@ p {
 .rosca {
     width: 350px;
     max-width: 100%;
-    margin: 20px auto;
+    margin: auto;
 }
 
 @media (max-width: 800px) {
